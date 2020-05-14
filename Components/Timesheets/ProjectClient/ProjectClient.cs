@@ -10,7 +10,7 @@ namespace Timesheets.ProjectClient
 
         public ProjectClient(HttpClient client)
         {
-            _client = client;
+            _client = client;          
         }
 
         public async Task<ProjectInfo> Get(long projectId)
