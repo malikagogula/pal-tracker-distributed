@@ -7,6 +7,9 @@ applications:
     routes:
       - route: backlog-md.cfapps.io
     path: Applications/BacklogServer/bin/Release/netcoreapp3.1/publish
+    env:
+      GRANT_TYPE: client_credentials
     services:
       - tracker-backlog-database
-      - tracker-service-registry
+      - tracker-service-registry 
+      - tracker-sso
